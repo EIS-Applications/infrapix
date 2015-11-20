@@ -57,3 +57,8 @@ Running the above command should result in an image similar to the following:
 
 2. Wait a really long time... enjoy.  Hint, run
 ```infrapix_render -h``` for help.
+
+
+v4l2-ctl --set-fmt-video=width=640,height=480
+v4l2-ctl --stream-mmap=3 --stream-count=1 --stream-to=somefile1.jpg
+infrapix_single -i s2.jpg --vmin 0.05  --vmax 1  -o ndvi_img11.jpg  --hide_colorbar
