@@ -62,4 +62,10 @@ Running the above command should result in an image similar to the following:
 v4l2-ctl --set-fmt-video=width=640,height=480
 v4l2-ctl --stream-mmap=3 --stream-count=1 --stream-to=somefile1.jpg
 infrapix_single -i somefile1.jpg --vmin 0.05  --vmax 1  -o ndvi_img1.jpg  --hide_colorbar
+```   
+
+It may require to  install the following packages:
+```
+pip install  PIL 
+pip install image
 ```
